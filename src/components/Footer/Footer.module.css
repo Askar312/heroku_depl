@@ -1,0 +1,58 @@
+box {
+  padding: 30px 60px;
+  background: rgb(82, 76, 76);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  box {
+    padding: 40px 60px;
+  }
+}
+
+container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+column {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 80px;
+}
+
+row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  grid-gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  row {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+a {
+  color: rgb(235, 226, 226);
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(250, 5, 5);
+  transition: 150ms ease-in;
+}
+
+heading {
+  font-size: 22px;
+  color: rgb(250, 0, 0);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
