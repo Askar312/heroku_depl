@@ -1,7 +1,7 @@
 box {
-  padding: 30px 60px;
-  background: rgb(82, 76, 76);
-  position: absolute;
+  background-image: url("https://img2.akspic.ru/originals/7/8/9/6/6/166987-atmosfera-yabloko-lazurnyj-blik-elektrik-2048x1152.jpg");
+  padding: 30px auto;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -34,7 +34,10 @@ row {
 
 @media (max-width: 1000px) {
   row {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  img {
+    margin-top: -5vh;
   }
 }
 
@@ -55,4 +58,13 @@ heading {
   color: rgb(250, 0, 0);
   margin-bottom: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  row {
+    line-height: 0.5em;
+  }
+  img {
+    margin-top: -5vh;
+  }
 }
