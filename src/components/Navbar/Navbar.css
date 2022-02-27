@@ -1,0 +1,8 @@
+.page-btn{
+    color: white;
+    transition: 0,5s linear;
+    
+}
+.page-btn:hover{
+    color: rgb(212, 10, 104);
+}
