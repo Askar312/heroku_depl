@@ -1,14 +1,18 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Contacts from "./components/Contacts/Contacts";
 import AboutUsPage from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
 import CartPage from "./pages/CartPage";
+import CreditPage from "./pages/CreditPage";
+import DeliveryPage from "./pages/DeliveryPage";
 import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductsPage from "./pages/ProductsPage";
+import WarrantyPage from "./pages/WarrantyPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -52,6 +56,21 @@ const MainRoutes = () => {
       element: <NotFoundPage />,
       id: 8,
     },
+    {
+      link: "/credit",
+      element: <CreditPage />,
+      id: 9,
+    },
+    {
+      link: "/warranty",
+      element: <WarrantyPage />,
+      id: 10,
+    },
+    {
+      link: "/delivery",
+      element: <DeliveryPage />,
+      id: 11,
+    },
   ];
 
   const PRIVATE_ROUTES = [
@@ -67,7 +86,15 @@ const MainRoutes = () => {
     },
   ];
 
-  return <></>;
+  return (
+    <>
+      <Routes>
+        {PUBLIC_ROUTES.map((item) => (
+          <Route path={item.link} element={item.element} />
+        ))}
+      </Routes>
+    </>
+  );
 };
 
 export default MainRoutes;
