@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from "../../assetcs/images/navbar/logo.svg"
 import { Link } from 'react-router-dom';
+import "../Navbar/Navbar.css"
 
 
 const pages = [
@@ -105,10 +106,10 @@ const Navbar = () => {
 
             {pages.map((page) => (
               <Link to={page.link}>
-              <Button
+              <Button className='page-btn'
                 key={page.id}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 0, color: '#ad1457', display: 'block',fontSize:10 }}
+                sx={{ my: 0, color: 'white', display: 'block',fontSize:10 }}
               >
                 {page.name}
               </Button>
@@ -118,8 +119,8 @@ const Navbar = () => {
           </Box>
 
         
-            
-            <Button sx={{fontSize:10,marginBottom:"20px",  color: '#ad1457', display: 'block',fontSize:10,padding:"0"}}> Вход</Button>
+            <Typography  variant='h5'>
+            <Button className='page-btn' sx={{marginBottom:"20px",  color: 'white', display: 'block',fontSize:11,padding:"0"}}> Вход</Button></Typography>
             
           
         </Toolbar>
