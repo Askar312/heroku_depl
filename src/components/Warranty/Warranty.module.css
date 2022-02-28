@@ -1,0 +1,43 @@
+.containerGarant {
+  margin: 0 auto;
+  margin-top: 3vh;
+  width: 95%;
+  min-height: 50%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.textColor {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  color: rgb(212, 10, 10);
+}
+.liText {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  margin-left: 45px;
+}
+.imgUs {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 40px;
+}
+.h4Color {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.3em;
+  color: rgb(212, 10, 10);
+}
+.h2Text {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.ulText {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+.texth4 {
+  margin-bottom: 15px;
+}
