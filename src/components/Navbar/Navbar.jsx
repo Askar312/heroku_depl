@@ -11,9 +11,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import logo from "../../assetcs/images/navbar/Logo.svg";
+import logo from "../../assetcs/images/navbar/logo.svg";
 import { Link } from "react-router-dom";
-import "../Navbar/Navbar.css";
+import "../Navbar/Navbar.modul.css";
 
 const pages = [
   { name: "Главная", link: "/", id: 1 },
