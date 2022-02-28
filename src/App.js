@@ -5,16 +5,19 @@ import Navbar from "./components/Navbar/Navbar";
 import MainRoutes from "./MainRoutes";
 import Header from "./components/Header/Header";
 import AuthContextProvider from "./contexts/AuthContext";
+import ProductContextProvider from "./contexts/ProductContext";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <AuthContextProvider>
-          <Navbar />
-          <Header />
-          <MainRoutes />
-          {/* <Footer /> */}
+          <ProductContextProvider>
+            <Navbar />
+            <Header />
+            <MainRoutes />
+            {/* <Footer /> */}
+          </ProductContextProvider>
         </AuthContextProvider>
       </BrowserRouter>
     </>
