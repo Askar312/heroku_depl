@@ -95,7 +95,7 @@ const Navbar = () => {
               {email == ADMIN ? (
                 <MenuItem>
                   <Link to="/admin">
-                    <Typography textAlign="center">ADMIN PANNEL</Typography>
+                    <Typography textAlign="center">Панель Админа </Typography>
                   </Link>
                 </MenuItem>
               ) : null}
@@ -131,7 +131,7 @@ const Navbar = () => {
                 <Button
                   sx={{ my: 0, color: "white", display: "block", fontSize: 10 }}
                 >
-                  ADMIN PANEL
+                  Панель Админа
                 </Button>
               </Link>
             ) : null}

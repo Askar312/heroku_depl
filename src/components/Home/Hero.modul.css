@@ -3,8 +3,8 @@ body{
 }
 
 .News{
-    box-shadow: 10px 10px 10px black;
-    width: 50vh;
+    /* box-shadow: 10px 10px 10px black; */
+    width: 30vw;
     height: 350px;
     margin: 10px 20px;
     border-radius: 10px;
@@ -17,7 +17,7 @@ body{
 
 .news-text{
     margin: 0 auto;
-    width: 50vh;
+    width: 28vw;
     height: 4vh;
     background-color: rgb(212, 10, 10);
     color: white;
@@ -32,4 +32,30 @@ body{
     width: 90%;
     margin: 0 auto;
     height: 90%;
+}
+.news-text-item-elem {
+    width: 90%;
+    height: 5vh;
+    cursor: pointer;
+    
+    border-bottom: solid 2px black;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+    
+    align-items: center;
+}
+.hero-image{
+    margin: 0 auto;
+    margin-right: 23px;
+    
+}
+
+.hero-image-item{
+    width:60vw;
+    height: 45vh;
+    border-radius: 20px;
 }
