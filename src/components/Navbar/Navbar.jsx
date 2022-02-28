@@ -12,8 +12,10 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import logo from "../../assetcs/images/navbar/logo.svg";
+import { ADMIN } from "../../helpers/consts";
 import { Link } from "react-router-dom";
 import "../Navbar/Navbar.modul.css";
+import { useAuth } from "../../contexts/AuthContext";
 
 const pages = [
   { name: "Главная", link: "/", id: 1 },
@@ -28,6 +30,11 @@ const pages = [
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -84,16 +91,27 @@ const Navbar = () => {
                   </Link>
                 </MenuItem>
               ))}
+              {/* ADMIN PANEL */}
+              {email == ADMIN ? (
+                <MenuItem>
+                  <Link to="/admin">
+                    <Typography textAlign="center">ADMIN PANNEL</Typography>
+                  </Link>
+                </MenuItem>
+              ) : null}
+              {/* ADMIN PANEL */}
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-          >
-            <img src={logo} alt="logo" />
-          </Typography>
+          <Link to="/">
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            >
+              {/* <img src={logo} alt="logo" /> */}
+            </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Link to={page.link}>
@@ -107,22 +125,54 @@ const Navbar = () => {
                 </Button>
               </Link>
             ))}
+            {/* ADMIN PANEL */}
+            {email == ADMIN ? (
+              <Link to="/admin">
+                <Button
+                  sx={{ my: 0, color: "white", display: "block", fontSize: 10 }}
+                >
+                  ADMIN PANEL
+                </Button>
+              </Link>
+            ) : null}
           </Box>
 
           <Typography variant="h5">
-            <Button
-              className="page-btn"
-              sx={{
-                marginBottom: "20px",
-                color: "white",
-                display: "block",
-                fontSize: 11,
-                padding: "0",
-              }}
-            >
-              {" "}
-              Вход
-            </Button>
+            {email ? (
+              <Link to="/">
+                <Button
+                  className="page-btn"
+                  sx={{
+                    marginBottom: "20px",
+                    color: "white",
+                    display: "block",
+                    fontSize: 11,
+                    padding: "0",
+                  }}
+                  onClick={handleLogout}
+                >
+                  Выход
+                </Button>
+              </Link>
+            ) : null}
+
+            {email ? null : (
+              <Link to="/auth">
+                <Button
+                  className="page-btn"
+                  sx={{
+                    marginBottom: "20px",
+                    color: "white",
+                    display: "block",
+                    fontSize: 11,
+                    padding: "0",
+                  }}
+                  onClick={handleLogout}
+                >
+                  Вход
+                </Button>
+              </Link>
+            )}
           </Typography>
         </Toolbar>
       </Container>
