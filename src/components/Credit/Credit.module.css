@@ -1,0 +1,29 @@
+.containerCredit{
+    margin: 0 auto;
+    margin-top: 3vh;
+    width: 95%;
+    min-height: 50%;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.CreditImage{
+    display: flex;
+    justify-content: center;
+}
+.creditLogo{
+    
+    width: 50vw;
+    height: 20vh;
+    padding: 20px 40px;
+
+}
+.CreditItem{
+    color: rgb(212, 10, 10);
+    margin: 15px 20px;
+    padding: 10px;
+}
+.CreditItemText{
+    margin: 15px 20px;
+    padding: 10px;
+}
