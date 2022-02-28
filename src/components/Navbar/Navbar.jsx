@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../../assetcs/images/navbar/logo.svg";
 import { ADMIN } from "../../helpers/consts";
 import { Link } from "react-router-dom";
-import "../Navbar/Navbar.modul.css";
+import "../Navbar/Navbar.module.css";
 import { useAuth } from "../../contexts/AuthContext";
 
 const pages = [
@@ -26,7 +26,6 @@ const pages = [
   { name: "Гарантия", link: "/warranty", id: 10 },
   { name: "Доставка", link: "/delivery", id: 11 },
   { name: "Акции", link: "/stock", id: 12 },
-
 ];
 
 const Navbar = () => {

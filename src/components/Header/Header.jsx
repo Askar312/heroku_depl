@@ -7,7 +7,7 @@ import {
   Button,
   Badge,
 } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, style } from "@mui/system";
 import React from "react";
 import logo from "../../assetcs/images/navbar/logo.svg";
 import FindInPageIcon from "@mui/icons-material/FindInPage";
@@ -33,7 +33,7 @@ const Header = () => {
         }}
       >
         <Box sx={{ my: 1, mx: 2 }}>
-          <img src={logo} alt="logo" />
+          <img className={styles.logo} src={logo} alt="logo" />
         </Box>
         <Box>
           <Input
