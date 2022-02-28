@@ -37,7 +37,7 @@ export default function MediaCard({ item }) {
               {item.name}
             </Typography>
             <Typography variant="body2" color="text.primary">
-              {item.description}
+              {item.price}сом
             </Typography>
           </CardContent>
         </div>
