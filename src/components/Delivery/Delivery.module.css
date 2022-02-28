@@ -1,0 +1,17 @@
+.containerDel {
+  margin: 0 auto;
+  margin-top: 3vh;
+  width: 95%;
+  min-height: 50%;
+  background-color: white;
+  border-radius: 5px;
+}
+.containerDelItem {
+  color: rgb(212, 10, 10);
+  margin: 15px 20px;
+  padding: 10px;
+}
+.containerDelItemList {
+  margin: 15px 20px;
+  padding: 10px;
+}
