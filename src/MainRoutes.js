@@ -16,6 +16,8 @@ import WarrantyPage from "./pages/WarrantyPage";
 import { ADMIN } from "./helpers/consts";
 import { useAuth } from "./contexts/AuthContext";
 
+import Stock from "./components/News/Stock";
+
 const MainRoutes = () => {
   const { user } = useAuth();
   const PUBLIC_ROUTES = [
@@ -73,6 +75,11 @@ const MainRoutes = () => {
       link: "/delivery",
       element: <DeliveryPage />,
       id: 11,
+    },
+    {
+      link: "/stock",
+      element: <Stock />,
+      id: 12,
     },
   ];
 
