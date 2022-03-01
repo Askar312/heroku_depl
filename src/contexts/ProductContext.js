@@ -37,18 +37,13 @@ const ProductContextProvider = ({ children }) => {
   // ! ===================== crud start======================
   const getProducts = async () => {
     // let { data } = await axios(JSON_API_PRODUCTS);
-    try {
-      let { data } = await axios(
-        `${JSON_API_PRODUCTS}${window.location.search}`
-      );
-      console.log("this is search", window.location.search);
-      dispatch({
-        type: ACTIONS.GET_PRODUCTS,
-        payload: data,
-      });
-    } catch (e) {
-      console.log(e);
-    }
+
+    let { data } = await axios(`${JSON_API_PRODUCTS}${window.location.search}`);
+    dispatch({
+      type: ACTIONS.GET_PRODUCTS,
+      payload: data,
+    });
+
   };
 
   const addProduct = async (newProduct) => {
