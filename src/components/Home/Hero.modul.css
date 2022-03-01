@@ -32,14 +32,19 @@ body{
     width: 90%;
     margin: 0 auto;
     height: 90%;
+    
 }
 .news-text-item-elem {
     width: 90%;
-    height: 5vh;
+    height: 9vh;
     cursor: pointer;
-    
     border-bottom: solid 2px black;
+    transition: 0,5s linear;
 }
+.news-text-item-elem:hover{
+    color: rgb(212, 10, 10);
+}
+
 .hero{
     display: flex;
     flex-wrap: wrap;
