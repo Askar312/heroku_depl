@@ -130,7 +130,9 @@ const Navbar = () => {
             {email == ADMIN ? (
               <Link to="/admin">
                 <Button
-                className="page-btn"
+
+                  className="page-btn"
+
                   sx={{ my: 0, color: "white", display: "block", fontSize: 10 }}
                 >
                   Панель Админа

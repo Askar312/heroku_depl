@@ -2,6 +2,7 @@ import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
+import "../Product/Product.css";
 
 const AddProduct = () => {
   const { addProduct } = useProducts();
@@ -35,7 +36,13 @@ const AddProduct = () => {
   };
 
   return (
-    <Box sx={{ bgcolor: "#ffffff", height: "100vh", padding: "20vh auto" }}>
+    <Box
+      sx={{
+        bgcolor: "rgb(207, 201, 201)",
+        height: "100vh",
+        padding: "20vh auto",
+      }}
+    >
       <center variant="h6" gutterBottom>
         <h2 sx={{ fontFamily: "Monospace" }}>Добро Пожаловать Админ!</h2>
       </center>
@@ -48,14 +55,15 @@ const AddProduct = () => {
           margin: "10vh auto",
           boxShadow: 3,
           borderRadius: 3,
-          bgcolor: "#ffcc80",
+          bgcolor: "#f3e5f5",
         }}
       >
         <form>
           <TextField
+            my="10px"
             fullWidth
             id="outlined-basic"
-            label="NAME"
+            label="НАЗВАНИЕ"
             variant="outlined"
             name="name"
             onChange={handleInp}
@@ -63,7 +71,7 @@ const AddProduct = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="DESCRIPTION"
+            label="ОПИСАНИЕ"
             variant="outlined"
             name="description"
             onChange={handleInp}
@@ -71,7 +79,7 @@ const AddProduct = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="PRICE"
+            label="ЦЕНА"
             variant="outlined"
             name="price"
             onChange={handleInp}
@@ -79,7 +87,7 @@ const AddProduct = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="PICTURE"
+            label="ФОТОГРАФИЯ"
             variant="outlined"
             name="picture"
             onChange={handleInp}
@@ -87,21 +95,21 @@ const AddProduct = () => {
           <TextField
             fullWidth
             id="outlined-basic"
-            label="TYPE"
+            label="ТИП"
             variant="outlined"
             name="type"
             onChange={handleInp}
           />
-          <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
+          <Stack direction="row" spacing={2} sx={{ bgcolor: "#0288d1" }}>
             <Button
               id="button"
               sx={{
-                bgcolor: "#ffffff",
+                bgcolor: "#263238",
                 borderColor: "error.main",
                 fontFamily: "Monospace",
               }}
-              variant="outlined"
               color="error"
+              variant="outlined"
               size="large"
               fullWidth
               onClick={() => {

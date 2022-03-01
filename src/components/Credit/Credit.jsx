@@ -11,7 +11,7 @@ const Credit = () => {
             <div  >
                 <h2 className={style.CreditItem}>Покупка в рассрочку и кредит</h2>
                 <h4 className={style.CreditItemText}>Устали копить на новый смартфон и ждать покупки до тех пор, пока наберётся нужная сумма?</h4>
-                <h4 className={style.CreditItemText}>Сеть магазинов O!Store в партнерстве с Дос-Кредобанк предоставляет вам возможность оформить рассрочку без первого взноса и переплат на смартфоны Apple, Xiaomi, Samsung, Realme, Honor, Tecno, OnePLus и INOI во всех магазинах сети.</h4>
+                <h4 className={style.CreditItemText}>Магазин Mobi-trend в партнерстве с Дос-Кредобанк предоставляет вам возможность оформить рассрочку без первого взноса и переплат на смартфоны Apple, Xiaomi, Samsung, Realme, Honor, Tecno, OnePLus и INOI во всех магазинах сети.</h4>
                 <h4 className={style.CreditItemText}>На смартфоны других производителей есть возможность оформления кредита.</h4>
                 <h4 className={style.CreditItemText}>Бери сейчас – плати потом!</h4>
                 <h2 className={style.CreditItem}>Для оформления кредита потребуется только паспорт*:</h2>
