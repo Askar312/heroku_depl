@@ -1,0 +1,26 @@
+.containerContacts {
+  margin: 0 auto;
+  margin-top: 3vh;
+  width: 95%;
+  min-height: 50%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.logo {
+  display: flex;
+  margin: 0 auto;
+}
+.h2Text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(212, 10, 10);
+}
+.contactsInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ulText {
+  text-align: center;
+}
