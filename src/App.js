@@ -16,7 +16,7 @@ function App() {
             <Navbar />
             <Header />
             <MainRoutes />
-            {/* <Footer /> */}
+            <Footer />
           </ProductContextProvider>
         </AuthContextProvider>
       </BrowserRouter>
