@@ -15,11 +15,11 @@ import { NoEncryption } from "@mui/icons-material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from "../Header/Header.module.css";
 import { useProducts } from "../../contexts/ProductContext";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Header = () => {
   const { getProducts } = useProducts();
-
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [search, setSearch] = useState(
@@ -31,31 +31,6 @@ const Header = () => {
       q: search,
     });
   }, [search]);
-
-
- // эти коды нужны там для фильтрации
-  // useEffect(() => {
-  //   getProducts();
-  // }, [searchParams]);
-
-  // useEffect(() => {
-  //   setSearchParams({
-  //     q: search,
-  //   });
-  // }, []);
-
-
-  // useEffect(() => {
-  //   setSearchParams({
-  //     q: search,
-  //   });
-  // }, [search]);
-  // окончание фильтрации
-
-
-
-
-
 
   const ariaLabel = { "aria-label": "description" };
   return (
@@ -73,8 +48,8 @@ const Header = () => {
           justifyContent: "space-around",
         }}
       >
-        <Box sx={{ my: 1, mx: 2 }}>
-          <img className={styles.logo} src={logo} alt="logo" />
+        <Box onClick={()=>navigate("/")} sx={{ my: 1, mx: 2 }}>
+          <img  className={styles.logo} src={logo} alt="logo" />
         </Box>
         <Box>
           <Input

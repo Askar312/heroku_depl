@@ -1,6 +1,8 @@
 .section2{
-    width: 97vw;
-    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 97vw;
+    min-height: 35vh;
     background-color:white;
     margin: 10px auto;
     
@@ -12,17 +14,17 @@
     justify-content: center;
 }
 .section2-item{
-    justify-content: space-between;
+    
+    
     padding: 15px;
     margin: 0 20px;
     flex-wrap: wrap;
 }
 .section2-image{
-
     
-    width: 15vw;
-    height: 17vh;
+    max-width: 15vw;
+    max-height: 17vh;
     margin: 10px;
-    margin-left: 20px;
+    margin-left: 35px;
     
 }
