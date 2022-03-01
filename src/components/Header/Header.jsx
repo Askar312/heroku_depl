@@ -8,14 +8,55 @@ import {
   Badge,
 } from "@mui/material";
 import { Box, style } from "@mui/system";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assetcs/images/navbar/logo.svg";
 import FindInPageIcon from "@mui/icons-material/FindInPage";
 import { NoEncryption } from "@mui/icons-material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from "../Header/Header.module.css";
+import { useProducts } from "../../contexts/ProductContext";
+import { useSearchParams } from "react-router-dom";
 
 const Header = () => {
+  const { getProducts } = useProducts();
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const [search, setSearch] = useState(
+    searchParams.get("q") ? searchParams.get("q") : ""
+  );
+
+  useEffect(() => {
+    setSearchParams({
+      q: search,
+    });
+  }, [search]);
+
+
+ // эти коды нужны там для фильтрации
+  // useEffect(() => {
+  //   getProducts();
+  // }, [searchParams]);
+
+  // useEffect(() => {
+  //   setSearchParams({
+  //     q: search,
+  //   });
+  // }, []);
+
+
+  // useEffect(() => {
+  //   setSearchParams({
+  //     q: search,
+  //   });
+  // }, [search]);
+  // окончание фильтрации
+
+
+
+
+
+
   const ariaLabel = { "aria-label": "description" };
   return (
     <>
@@ -37,6 +78,8 @@ const Header = () => {
         </Box>
         <Box>
           <Input
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
             sx={{
               fontFamily: "-apple-system",
               borderRadius: 4,
