@@ -31,6 +31,9 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   // ! ===================== crud start======================
   const getProducts = async () => {
     // let { data } = await axios(JSON_API_PRODUCTS);
@@ -65,6 +68,17 @@ const ProductContextProvider = ({ children }) => {
     getProducts();
   };
   // ! ===================== crud end========================
+  // Filter
+  const fetchByParams = async (query, value) => {
+    const search = new URLSearchParams(location.search);
+    if (value === "all") {
+      search.delete(query);
+    } else {
+      search.set(query, value);
+    }
+    const url = `${location.pathname}?${search.toString()}`;
+    navigate(url);
+  };
 
   const values = {
     getProducts,
@@ -74,6 +88,8 @@ const ProductContextProvider = ({ children }) => {
     saveEditedProduct,
     products: state.products,
     productDetails: state.productDetails,
+
+    fetchByParams,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>

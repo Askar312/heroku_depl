@@ -1,28 +1,100 @@
 {
   "products": [
     {
-      "name": "Ipjone 13",
+      "name": "Iphone 13",
       "description": "iphone 13 pro max",
-      "price": 130000,
-      "picture": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-family-select?wid=1880&hei=2224&fmt=jpeg&qlt=80&.v=1631306948000",
+      "price": "149750",
+      "picture": "https://softech.kg/image/cache/02bc8f67ae321d261ebdac4fc65402f3.png",
       "type": "phone",
       "id": 2
     },
     {
-      "name": "asfsffeslfaklfjelfnlas",
-      "description": "asdfsdfsef",
-      "price": null,
-      "picture": "easf",
-      "type": "faesf",
+      "name": "Iphone 12",
+      "description": "iphone 12 pro max",
+      "price": " 111900",
+      "picture": "https://softech.kg/image/cache/557647157e48cd749b0893d7f78d02cc.png",
+      "type": "phone",
       "id": 3
     },
     {
-      "name": "defsgh",
-      "description": "sdfg",
-      "price": null,
-      "picture": "sdfg",
-      "type": "fvb",
+      "name": "APPLE M1",
+      "description": "НОУТБУК APPLE MACBOOK AIR 13.3\" 2020 APPLE M1 (8+256GB SSD)",
+      "price": 89900,
+      "picture": "https://softech.kg/image/cache/704ec7339290b014fa034daaf9486e5f.jpg",
+      "type": "laptop",
       "id": 4
+    },
+    {
+      "name": "MACBOOK PRO 14",
+      "description": "НОУТБУК APPLE MACBOOK PRO 14\" 2021 APPLE M1 PRO CHIP WITH 8‑CORE CPU AND 14‑CORE GPU (16+512GB SSD)",
+      "price": 189900,
+      "picture": "https://softech.kg/image/cache/8ec23d25cda1071ce63b9f4fa3f04b45.jpg",
+      "type": "laptop",
+      "id": 5
+    },
+    {
+      "name": "APPLE WATCH",
+      "description": "СМАРТ-ЧАСЫ APPLE WATCH SERIES 7 41MM",
+      "price": 35555,
+      "picture": "https://softech.kg/image/cache/d0355fba0ca0fbfadb8bf55b74b3c8fa.jpg",
+      "type": "watch",
+      "id": 6
+    },
+    {
+      "name": "APPLE WATCH",
+      "description": "СМАРТ-ЧАСЫ APPLE WATCH SERIES 5 GPS 44MM",
+      "price": 30950,
+      "picture": "https://softech.kg/image/cache/984c5cf24d825712b906372b04009cb3.jpg",
+      "type": "watch",
+      "id": 7
+    },
+    {
+      "name": "AIRPODS 3",
+      "description": "БЕСПРОВОДНЫЕ НАУШНИКИ APPLE AIRPODS 3 WITH WIRELESS CHARGING CASE",
+      "price": 14444,
+      "picture": "https://softech.kg/image/cache/d9d08a7a9f45e3eea85ee678c4742c77.jpg",
+      "type": "airpods",
+      "id": 8
+    },
+    {
+      "name": "AIRPODS 2",
+      "description": "БЕСПРОВОДНЫЕ НАУШНИКИ APPLE AIRPODS 2 WITH WIRELESS CHARGING CASE",
+      "price": 12850,
+      "picture": "https://softech.kg/image/cache/a015d807412c4981a278b775929607c9.jpg",
+      "type": "airpods",
+      "id": 9
+    },
+    {
+      "name": "Чехол IPHONE 12 PRO MAX",
+      "description": "Прочный резиновый чехол с полу-прозрачной задней крышкой. Подойдет для iPhone 12 PRO MAX",
+      "price": 400,
+      "picture": "https://softech.kg/image/cache/865296729444b22c70a02c4b2733d7fe.jpg",
+      "type": "case",
+      "id": 10
+    },
+    {
+      "name": "Чехол IPHONE 12/12 PRO",
+      "description": "ЧЕХОЛ NILLKIN CAMSHIELD IPHONE 12/12 PRO",
+      "price": 650,
+      "picture": "https://softech.kg/image/cache/749be43717c3f4748ca140724cb57158.jpg",
+      "type": "case",
+      "id": 11
+    },
+    {
+      "name": "МОБИЛЬНЫЙ ПРИНТЕР",
+      "description": "БЕСПРОВОДНОЙ МОБИЛЬНЫЙ ПРИНТЕР 58MM (BT-581)",
+      "price": 4350,
+      "picture": "https://softech.kg/image/cache/a245c893b8bb52845b5fc84a267c452d.jpg",
+      "type": "printer",
+      "id": 12
+    },
+    {
+      "name": "ПРИНТЕР ЧЕКОВ",
+      "description": "ПРИНТЕР ЧЕКОВ XPRINTER XP-N160 LAN",
+      "price": 6800,
+      "picture": "https://softech.kg/image/cache/cf0534816d16bfa9b56464c13d9e6737.jpg",
+      "type": "printer",
+      "id": 13
     }
   ]
 }

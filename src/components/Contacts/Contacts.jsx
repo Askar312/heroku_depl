@@ -41,36 +41,36 @@ const Contacts = () => {
       </ul>
       <div className={style.inpContacs}>
         <TextField
-          sx={{ my: 5, mx: 7 }}
+          sx={{ my: 5, mx: 13 }}
           helperText="Ваше имя*"
           id="demo-helper-text-aligned"
           label="Имя"
         />
         <TextField
-          sx={{ my: 5, mx: 7 }}
+          sx={{ my: 5, mx: 13 }}
           helperText="Электронная почта*"
           id="demo-helper-text-aligned"
           label="Почта"
         />
         <TextField
-          sx={{ my: 5, mx: 7 }}
+          sx={{ my: 5, mx: 13 }}
           helperText=" Ваш телефон*"
           id="demo-helper-text-aligned"
           label="Телефон"
         />
         <TextField
-          sx={{ my: 5, mx: 7 }}
+          sx={{ my: 5, mx: 13 }}
           helperText="Тема вопроса*"
           id="demo-helper-text-aligned"
           label="Вопрос"
         />
         <TextField
-          sx={{ my: 5, mx: 7 }}
+          sx={{ my: 5, mx: 13 }}
           helperText=" Ваше сообщение**"
           id="demo-helper-text-aligned"
           label="Сообщение"
         />
-        <Button sx={{ my: 6, mx: 7 }} color="error">
+        <Button sx={{ my: 6, mx: 13 }} color="error">
           Оставьте Отзыв
         </Button>
       </div>
