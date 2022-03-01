@@ -4,21 +4,26 @@ body{
 
 .News{
     /* box-shadow: 10px 10px 10px black; */
-    width: 30vw;
-    height: 350px;
+    max-width: 30vw;
+    max-height: 350px;
     margin: 10px 20px;
     border-radius: 10px;
     background-color: white;
     
 
 }
+@media screen and (max-width:850px) {
+    .News{
+        display: none;
+    }
+}
 
 
 
 .news-text{
     margin: 0 auto;
-    width: 28vw;
-    height: 4vh;
+    max-width: 28vw;
+    max-height: 4vh;
     background-color: rgb(212, 10, 10);
     color: white;
     text-align: center;
@@ -48,7 +53,7 @@ body{
 .hero{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
    
     
     align-items: center;
@@ -60,7 +65,17 @@ body{
 }
 
 .hero-image-item{
-    width:60vw;
-    height: 45vh;
-    border-radius: 20px;
+    margin-top: 10px;
+    width:55vw;
+    max-height: 55vh;
+    border-radius: 10px;
 }
+@media screen and (max-width:850px){
+    .hero-image-item{
+        width:100vw;
+        max-height: 45vh;
+        border-radius: 20px;
+    }
+    
+}
+
