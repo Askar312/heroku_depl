@@ -12,6 +12,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import { ADMIN } from "../../helpers/consts";
 import { IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import style from "../Product/Product.module.css";
 
 export default function MediaCard({ item }) {
   const { deleteProduct, addProductToCart, checkProductInCart } = useProducts();
@@ -22,16 +23,10 @@ export default function MediaCard({ item }) {
   } = useAuth();
 
   return (
-    <>
-      <Card sx={{ borderRadius: 3 }}>
+    <div className={style.card_page}>
+      <Card>
         <div className="cardProduct">
-          <CardMedia
-            sx={{ borderRadius: 2 }}
-            component="img"
-            height="300"
-            image={item.picture}
-            alt="green iguana"
-          />
+          <CardMedia component="img" height="245" image={item.picture} />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {item.name}
@@ -46,10 +41,10 @@ export default function MediaCard({ item }) {
             <>
               {" "}
               <Button size="small" onClick={() => deleteProduct(item.id)}>
-                DELETE
+                Удалить
               </Button>
               <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
-                EDIT
+                Изменить
               </Button>
             </>
           ) : (
@@ -60,9 +55,11 @@ export default function MediaCard({ item }) {
             </IconButton>
           )}
 
-          <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
+          <Button size="small" onClick={() => navigate(`/products/${item.id}`)}>
+            О товаре
+          </Button>
         </CardActions>
       </Card>
-    </>
+    </div>
   );
 }

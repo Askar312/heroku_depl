@@ -2,7 +2,6 @@ import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
-import "../Product/Product.css";
 
 const AddProduct = () => {
   const { addProduct } = useProducts();

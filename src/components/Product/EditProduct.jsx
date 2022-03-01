@@ -2,7 +2,6 @@ import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
-import "../Product/Product.css";
 
 const EditProduct = () => {
   const { id } = useParams();
