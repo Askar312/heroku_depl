@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../../assetcs/images/navbar/logo.svg";
 import { ADMIN } from "../../helpers/consts";
 import { Link } from "react-router-dom";
-import "../Navbar/Navbar.module.css";
+import "../Navbar/Navbar.css";
 import { useAuth } from "../../contexts/AuthContext";
 
 const pages = [
@@ -130,6 +130,7 @@ const Navbar = () => {
             {email == ADMIN ? (
               <Link to="/admin">
                 <Button
+                  className="page-btn"
                   sx={{ my: 0, color: "white", display: "block", fontSize: 10 }}
                 >
                   Панель Админа

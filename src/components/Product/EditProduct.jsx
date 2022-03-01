@@ -2,6 +2,7 @@ import { Box, Button, Grid, Stack, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
+import "../Product/Product.css";
 
 const EditProduct = () => {
   const { id } = useParams();
@@ -36,9 +37,16 @@ const EditProduct = () => {
 
   return (
     <div>
-      <Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
+      <Box
+        sx={{
+          bgcolor: "rgb(207, 201, 201)",
+          height: "100vh",
+          padding: "20vh auto",
+        }}
+      >
         <center variant="h6" gutterBottom>
-          EDIT PRODUCT
+          Добро Пожаловать Админ ! <br />
+          Хотите что то поменять ?
         </center>
 
         <Grid
@@ -49,7 +57,7 @@ const EditProduct = () => {
             margin: "10vh auto",
             boxShadow: 3,
             borderRadius: 3,
-            bgcolor: "#ffcc80",
+            bgcolor: "#f3e5f5",
           }}
         >
           <form>
@@ -57,7 +65,7 @@ const EditProduct = () => {
               value={product.name}
               fullWidth
               id="outlined-basic"
-              label="NAME"
+              label="НАЗВАНИЕ"
               variant="outlined"
               name="name"
               onChange={(e) => handleInput(e, product, setProduct)}
@@ -66,7 +74,7 @@ const EditProduct = () => {
               value={product.description}
               fullWidth
               id="outlined-basic"
-              label="DESCRIPTION"
+              label="ОПИСАНИЕ"
               variant="outlined"
               name="description"
               onChange={(e) => handleInput(e, product, setProduct)}
@@ -75,7 +83,7 @@ const EditProduct = () => {
               value={product.price}
               fullWidth
               id="outlined-basic"
-              label="PRICE"
+              label="ЦЕНА"
               variant="outlined"
               name="price"
               onChange={(e) => handleInput(e, product, setProduct)}
@@ -84,7 +92,7 @@ const EditProduct = () => {
               value={product.picture}
               fullWidth
               id="outlined-basic"
-              label="PICTURE"
+              label="ФОТОГРАФИЯ"
               variant="outlined"
               name="picture"
               onChange={(e) => handleInput(e, product, setProduct)}
@@ -93,7 +101,7 @@ const EditProduct = () => {
               value={product.type}
               fullWidth
               id="outlined-basic"
-              label="TYPE"
+              label="ТИП"
               variant="outlined"
               name="type"
               onChange={(e) => handleInput(e, product, setProduct)}
@@ -115,7 +123,7 @@ const EditProduct = () => {
                   navigate("/products");
                 }}
               >
-                EDIT PRODUCT
+                ИЗМЕНЕНИЕ ПРОДУКТА
               </Button>
             </Stack>
           </form>
