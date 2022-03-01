@@ -25,7 +25,9 @@ const Header = () => {
   const [search, setSearch] = useState(
     searchParams.get("q") ? searchParams.get("q") : ""
   );
-
+  useEffect(() => {
+    getProducts();
+  }, [searchParams]);
   useEffect(() => {
     setSearchParams({
       q: search,
@@ -48,13 +50,13 @@ const Header = () => {
           justifyContent: "space-around",
         }}
       >
-        <Box onClick={()=>navigate("/")} sx={{ my: 1, mx: 2 }}>
-          <img  className={styles.logo} src={logo} alt="logo" />
+        <Box onClick={() => navigate("/")} sx={{ my: 1, mx: 2 }}>
+          <img className={styles.logo} src={logo} alt="logo" />
         </Box>
         <Box>
           <Input
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             sx={{
               fontFamily: "-apple-system",
               borderRadius: 4,
