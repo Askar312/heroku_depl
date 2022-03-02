@@ -9,6 +9,7 @@ import CreditPage from "./pages/CreditPage";
 import DeliveryPage from "./pages/DeliveryPage";
 import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
+import CreditCardPage from "./pages/CreditCardPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductsPage from "./pages/ProductsPage";
@@ -80,6 +81,11 @@ const MainRoutes = () => {
       link: "/stock",
       element: <Stock />,
       id: 12,
+    },
+    {
+      link: "/credit-card",
+      element: <CreditCardPage />,
+      id: 13,
     },
   ];
 
