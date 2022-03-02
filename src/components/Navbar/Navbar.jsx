@@ -113,10 +113,11 @@ const Navbar = () => {
               {/* <img src={logo} alt="logo" /> */}
             </Typography>
           </Link>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ marginBottom: "20px", flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Link to={page.link}>
                 <Button
+                
                   className="page-btn"
                   key={page.id}
                   onClick={handleCloseNavMenu}

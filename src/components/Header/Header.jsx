@@ -14,10 +14,18 @@ import FindInPageIcon from "@mui/icons-material/FindInPage";
 import { NoEncryption } from "@mui/icons-material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import styles from "../Header/Header.module.css";
-import { useProducts } from "../../contexts/ProductContext";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useProducts} from "../../contexts/ProductContext";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
+import { ADMIN } from "../../helpers/consts";
 
 const Header = () => {
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
+
+  const { cart } = useProducts();
   const { getProducts } = useProducts();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -69,11 +77,20 @@ const Header = () => {
             placeholder="        Поиск товаров"
           />
         </Box>
-        <Button sx={{ my: 2, color: "white" }}>
-          <Badge color="secondary">
-            <ShoppingCartIcon />
-          </Badge>
-        </Button>
+
+        {email == ADMIN ? (null) : (
+              <Link to="/cart">
+                <Button sx={{ my: 2, color: 'white' }}>
+                  <Badge
+                    badgeContent={cart?.products ? cart.products.length : 0}
+                    color="secondary"
+                  >
+                    <ShoppingCartIcon />
+                  </Badge>
+                </Button>
+              </Link>
+            )}
+        
       </Box>
     </>
   );
