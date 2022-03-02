@@ -44,6 +44,9 @@ const AuthContextProvider = ({ children }) => {
   };
 
   const handleLogin = () => {
+    console.log(email, "sign in email");
+    console.log(password, "sign in password");
+
     clearErrors();
     fire
       .auth()

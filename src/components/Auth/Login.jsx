@@ -107,7 +107,7 @@ export default function Login() {
 
               {hasAccount ? (
                 <Button
-                  type="submit"
+                  type="button"
                   fullWidth
                   variant="contained"
                   sx={{
