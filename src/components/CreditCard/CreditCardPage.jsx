@@ -16,25 +16,25 @@ const CreditCardPage = () => {
       <img className={style.logo} src={img} alt="" />
       <h2 className={style.h2Text}>Страница оплаты</h2>
       <TextField
-        sx={{ my: 3, mx: 50, width: "40vw" }}
+        sx={{ my: 3, mx: 5, width: "50vw" }}
         helperText=" Введите имя*"
         id="demo-helper-text-aligned"
         label="Имя"
       />
       <TextField
-        sx={{ my: 3, mx: 50, width: "40vw" }}
+        sx={{ my: 3, mx: 5, width: "50vw" }}
         helperText=" Введите номер телефона*"
         id="demo-helper-text-aligned"
         label="Номер телефона"
       />
       <TextField
-        sx={{ my: 3, mx: 50, width: "40vw" }}
+        sx={{ my: 3, mx: 5, width: "50vw" }}
         helperText=" Введите адрес проживание*"
         id="demo-helper-text-aligned"
         label="Адрес"
       />
       <TextField
-        sx={{ my: 3, mx: 50, width: "40vw" }}
+        sx={{ my: 3, mx: 5, width: "50vw" }}
         helperText="Оставтье коментарий*"
         id="demo-helper-text-aligned"
         label="Коментарий"
@@ -42,7 +42,7 @@ const CreditCardPage = () => {
 
       <Button
         onClick={handleAlert}
-        className={style.btn}
+        className={style.btncard}
         variant="contained"
         color="success"
       >

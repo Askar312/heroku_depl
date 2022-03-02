@@ -23,7 +23,7 @@ function Copyright(props) {
       {...props}
       sx={{ marginBottom: "0" }}
     >
-      {"Copyright © "}
+      {"Mobi Trend © "}
 
       {new Date().getFullYear()}
       {"."}
@@ -48,7 +48,7 @@ export default function Login() {
   } = useAuth();
 
   return (
-    <Box sx={{ bgcolor: "#fff3e0", padding: 5 }}>
+    <Box sx={{ bgcolor: "#fffff", padding: 5 }}>
       <ThemeProvider theme={theme}>
         <Container component="main" maxWidth="xs">
           <CssBaseline />
@@ -61,11 +61,11 @@ export default function Login() {
               alignItems: "center",
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: "#f57c00" }}>
+            <Avatar sx={{ m: 1, bgcolor: "#d81b60" }}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Авторизация
             </Typography>
             <Box component="form" noValidate>
               <TextField
@@ -73,7 +73,7 @@ export default function Login() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="Email Адрес"
                 name="email"
                 autoComplete="email"
                 autoFocus
@@ -89,7 +89,7 @@ export default function Login() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="Пароль"
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -102,7 +102,7 @@ export default function Login() {
 
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
+                label="Запомнить меня"
               />
 
               {hasAccount ? (
@@ -114,13 +114,13 @@ export default function Login() {
                     mt: 3,
                     mb: 2,
                     bgcolor: "#263238",
-                    borderColor: "error.main",
+                    borderColor: "error",
                     fontFamily: "Monospace",
-                    color: "#f57c00",
+                    color: "#d50000",
                   }}
                   onClick={handleLogin}
                 >
-                  Sign In
+                  Войти
                 </Button>
               ) : (
                 <Button
@@ -133,11 +133,11 @@ export default function Login() {
                     bgcolor: "#263238",
                     borderColor: "error.main",
                     fontFamily: "Monospace",
-                    color: "#f57c00",
+                    color: "#d50000",
                   }}
                   onClick={handleSignUp}
                 >
-                  Sign Up
+                  Зарегистрироваться
                 </Button>
               )}
 
@@ -153,18 +153,18 @@ export default function Login() {
                       href="#"
                       variant="body2"
                       onClick={() => setHasAccount(!hasAccount)}
-                      sx={{ color: "#f57c00" }}
+                      sx={{ color: "#d50000" }}
                     >
-                      {"Don't have an account? Sign Up"}
+                      {"Нет аккаунта ? Зарегистрируйтесь"}
                     </Link>
                   ) : (
                     <Link
                       href="#"
                       variant="body2"
                       onClick={() => setHasAccount(!hasAccount)}
-                      sx={{ color: "#f57c00" }}
+                      sx={{ color: "#d50000" }}
                     >
-                      {"Have an account? Sign In"}
+                      {"Есть аккаунт ? Войдите"}
                     </Link>
                   )}
                 </Grid>

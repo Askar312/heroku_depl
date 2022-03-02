@@ -7,19 +7,16 @@
   border-radius: 5px;
 }
 .logo {
-  margin-left: 40vw;
+  margin-left: 25vw;
   color: rgb(212, 10, 10);
 }
-.inp {
-  margin-top: 15px;
-  width: 94vw;
-}
+
 .h2Text {
   color: rgb(196, 57, 57);
-  text-align: center;
+  margin-left: 30vw;
 }
-.btn {
+.btncard {
   margin-top: 5vw;
-  margin-left: 40vw;
+  margin-left: 30vw;
   margin-bottom: 5vw;
 }
