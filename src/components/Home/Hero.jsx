@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
         </div>
         <div className='hero-image'>
-            <img className='hero-image-item' src="https://www.liga.net/images/general/2021/09/14/20210914212740-5095.jpg" alt="" />
+            <img className='hero-image-item' src="https://artforlife.ru/wp-content/uploads/2019/05/populyarnye-aksessuary-dlya-telefonov-dlya-teh-kto-hochet-eshhe-luchshe-10pix-ru.jpg" alt="" />
         </div>
         
 
