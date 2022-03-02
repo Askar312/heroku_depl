@@ -25,7 +25,7 @@ export default function MediaCard({ item }) {
   return (
     <div className={style.card_page}>
       <Card>
-        <div className="cardProduct">
+        <div className={style.cardProduct}>
           <CardMedia component="img" height="245" image={item.picture} />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
