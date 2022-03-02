@@ -51,7 +51,10 @@ export default function MediaCard({ item }) {
             <IconButton onClick={() => addProductToCart(item)}>
               <ShoppingCartIcon
 
-              // color={checkProductInCart(item.id) ? "secondary" : ""}
+
+                color={checkProductInCart(item.id) ? "secondary" : ""}
+
+
               />
             </IconButton>
           )}
