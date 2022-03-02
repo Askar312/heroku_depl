@@ -13,6 +13,7 @@ const Section2 = () => {
                 <img className='section2-image' src="https://pngimg.com/uploads/samsung_logo/samsung_logo_PNG5.png" alt="" />
                 <img className='section2-image' src="https://seeklogo.com/images/H/huawei-logo-6535FE0552-seeklogo.com.png" alt="" />
                 <img className='section2-image' src="https://автопрайс.рф/wp-content/uploads/2020/03/logo-3.jpg" alt="" />
+                <img className='section2-image' src="https://1000logos.net/wp-content/uploads/2020/07/Casetify-Logo1.jpg" alt="" />
                 
                 
             </div>
