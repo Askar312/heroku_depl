@@ -1,9 +1,14 @@
 .container{
     width: 97vw;
-    height: 45vh;
+    min-height: 45vh;
     background-color:white;
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    
     border-radius: 10px;
+}
+.container-item-image{
+    max-width: 15vw;
+    min-height: 10vh;
 }
