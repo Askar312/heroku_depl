@@ -12,7 +12,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import { ADMIN } from "../../helpers/consts";
 import { IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import style from "../Product/Product.module.css";
+import style from "../Product/style/Product.module.css";
 
 export default function MediaCard({ item }) {
   const { deleteProduct, addProductToCart, checkProductInCart } = useProducts();
@@ -51,7 +51,9 @@ export default function MediaCard({ item }) {
             <IconButton onClick={() => addProductToCart(item)}>
               <ShoppingCartIcon
 
+
                 color={checkProductInCart(item.id) ? "secondary" : ""}
+
 
               />
             </IconButton>
