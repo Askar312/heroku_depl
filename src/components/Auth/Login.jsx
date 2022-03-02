@@ -24,9 +24,7 @@ function Copyright(props) {
       sx={{ marginBottom: "0" }}
     >
       {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{" "}
+
       {new Date().getFullYear()}
       {"."}
     </Typography>
