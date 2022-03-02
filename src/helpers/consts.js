@@ -1,4 +1,4 @@
-export const ADMIN = "askar.kg.com@mail.ru";
+export const ADMIN = "mobi-trend@gmail.com";
 export const ACTIONS = {
   GET_PRODUCTS: "GET_PRODUCTS",
   GET_PRODUCT_DETAILS: "GET_PRODUCT_DETAILS",

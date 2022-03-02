@@ -1,0 +1,25 @@
+.containers {
+  margin: 0 auto;
+  margin-top: 3vh;
+  width: 95%;
+  min-height: 50%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.logo {
+  margin-left: 40vw;
+  color: rgb(212, 10, 10);
+}
+.inp {
+  margin-top: 15px;
+  width: 94vw;
+}
+.h2Text {
+  color: rgb(196, 57, 57);
+  text-align: center;
+}
+.btn {
+  margin-top: 5vw;
+  margin-left: 40vw;
+  margin-bottom: 5vw;
+}

@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { useProducts } from "../../contexts/ProductContext";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -120,13 +121,14 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-
-      <Button
-        sx={{ color: "red", border: 1, my: 1, mx: 1 }}
-        onClick={cartCleaner}
-      >
-        Купить за {cart.totalPrice} сом
-      </Button>
+      <Link to={"/credit-card"}>
+        <Button
+          sx={{ color: "red", border: 1, my: 1, mx: 1 }}
+          onClick={cartCleaner}
+        >
+          Купить за {cart.totalPrice} сом
+        </Button>
+      </Link>
     </TableContainer>
   );
 }
