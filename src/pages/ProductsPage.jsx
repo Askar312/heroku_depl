@@ -39,7 +39,7 @@ const ProductsPage = () => {
         previousLabel={<ArrowCircleLeftSharpIcon />}
         nextLabel={<ArrowCircleRightSharpIcon />}
         onPageChange={changePage}
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={6}
         pageCount={pageCount}
         renderOnZeroPageCount={null}
         containerClassName="pagination"

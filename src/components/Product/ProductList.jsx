@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { useProducts } from "../../contexts/ProductContext";
 import MediaCard from "../Product/ProductCard";
 import SideBar from "../SideBar/SideBar";
-import style from "../Product/Product.module.css";
 
 const ProductList = ({ products }) => {
   const { getProducts } = useProducts();
