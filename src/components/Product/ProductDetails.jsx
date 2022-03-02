@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
+import style from "../Product/style/ProductDetail.module.css";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -12,19 +13,24 @@ const ProductDetails = () => {
   }, [id]);
 
   return (
-    <div
-      className="details-wrap"
-      style={{ display: "flex", justifyContent: "space-evenly" }}
-    >
+    <div className={style.detailsWrap}>
       <div>
-        <img id="details-img" src={productDetails.picture} alt="" />
+        <img className={style.detailImg} src={productDetails.picture} alt="" />
       </div>
 
-      <div className="details-list">
-        <h2 className="title">{productDetails.name}</h2>
-        <h3 className="type">{productDetails.type}</h3>
-        <h4 className="price">{productDetails.price}</h4>
-        <h5 className="descr">{productDetails.description}</h5>
+      <div className={style.detailsList}>
+        <h2 className="title">
+          <span className={style.detailSpan}>Наименование - </span>
+          {productDetails.name}
+        </h2>
+        <h3 className="price">
+          <span className={style.detailSpan}>Цена - </span>
+          {productDetails.price}
+        </h3>
+        <h3 className="descr">
+          <span className={style.detailSpan}>Описание - </span>
+          {productDetails.description}
+        </h3>
       </div>
     </div>
   );
