@@ -68,7 +68,7 @@ const itemData = [
     cols: 2,
   },
   {
-    img: 'https://www.liga.net/images/general/2021/09/14/20210914212740-5095.jpg',
+    img: 'https://softech.kg/image/cache/54d8e1aa049541590a400e00f8564dff.jpg',
     title: 'Apple Iphone 13 pro',
     author: '',
     cols: 2,
