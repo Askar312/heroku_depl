@@ -24,13 +24,13 @@ const ProductsPage = () => {
     pageVisited + productPerPage
   );
   const changePage = ({ selected }) => {
-    console.log(selected, "here");
+    // console.log(selected, "here");
     setPage(selected);
   };
 
   useEffect(() => {
     getProducts();
-  }, [location.search]);
+  }, [location]);
 
   return (
     <div>

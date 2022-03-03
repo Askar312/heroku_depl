@@ -7,7 +7,7 @@ import SideBar from "../SideBar/SideBar";
 
 const ProductList = ({ products }) => {
   const { getProducts } = useProducts();
-  console.log(products);
+  // console.log(products);
 
   useEffect(() => {
     getProducts();
